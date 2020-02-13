@@ -1,0 +1,32 @@
+<h1>Dragon's Home</h1>
+
+<form action="/dragons/create" method="POST" enctype="multipart/form-data">
+  <label for="name-input">Name</label>
+  <input id="name-input" type="text" name="name" placeholder="Draco">
+  <br>
+
+  <label for="location-input">Location</label>
+  <input id="location-input" type="text" name="location" placeholder="Winterfell">
+  <br>
+
+  <label for="kewlFactor-input">Kewl Factor</label>
+  <input id="kewlFactor-input" type="Number" name="kewlFactor" placeholder="5">
+  <br>
+
+  <label for="image-input">Choose Your Image File</label>
+  <input id="image-input" type="file" name="image">
+  <br>
+
+  <button>Save Your Dragon</button>
+</form>
+
+<hr>
+
+{{#each dragons}}
+  <div class="dragon-div">
+    <h3>{{this.name}}</h3>
+    <img src="{{this.image}}" alt="dragon">
+    <h4>{{this.location}}</h4>
+    <h4>{{this.kewlFactor}}</h4>
+  </div>
+{{/each}}
