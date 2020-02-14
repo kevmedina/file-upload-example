@@ -11,4 +11,26 @@ img {
 .dragon-div {
   border-bottom: 2px solid black; }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center; }
+
+form label {
+  padding-bottom: 4px; }
+
+form input {
+  padding: 4px;
+  width: 220px;
+  font-size: 16px; }
+
+form button {
+  background-color: blue;
+  color: #FFF;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
 /*# sourceMappingURL=style.css.map */
